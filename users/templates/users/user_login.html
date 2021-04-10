@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>profile with data and skills - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+
+.border-md {
+    border-width: 2px;
+}
+
+.btn-facebook {
+    background: #405D9D;
+    border: none;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background: #314879;
+}
+
+.btn-twitter {
+    background: #42AEEC;
+    border: none;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background: #1799e4;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+.form-control:not(select) {
+    padding: 1.5rem 0.5rem;
+}
+
+select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+    </style>
+</head>
+<body>
+<!-- Navbar-->
+
+
+
+<div class="container">
+    <div class="row mt-4 align-items-center ">
+        <!-- For Demo Purpose -->
+
+        <!-- Registeration Form -->
+        <div class="col-md-7 col-lg-6">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    <!-- UserName -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input id="username" type="text" name="username" placeholder="Username" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input id="password" type="password" name="password" placeholder="Password" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <div class="form-group col-lg-12 mx-auto mb-0">
+                        <a href="#" class="btn btn-primary btn-block py-2">
+                            <input id="form-button" class="btn btn-primary btn-block" type="submit" value="Login">
+                        </a>
+                    </div>
+
+                    <!-- Divider Text -->
+                    <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                        <div class="border-bottom w-100 ml-5"></div>
+                        <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+                        <div class="border-bottom w-100 mr-5"></div>
+                    </div>
+
+
+
+                    <!-- Already Registered -->
+                    <div class="text-center w-100">
+                        <p class="text-muted font-weight-bold">Create Account ? <a href=" class="text-primary ml-2">Signup</a></p>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
